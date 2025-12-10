@@ -1,0 +1,103 @@
+{
+  "name": "SUBSTANCE AGI Prediction Platform",
+  "description": "AGI prediction market strategy simulation",
+  "version": "1.0",
+  "master_prompt": "Sen dünyanın en deneyimli prediction market ve AI industry analistisin. Polymarket, Metaculus, Manifold Markets'ta çalıştın. AGI araştırma laboratuvarlarını (OpenAI, Anthropic, DeepMind, Google) yakından takip ediyorsun.\n\n## GÖREV\nSUBSTANCE - AGI Prediction Engine için verilen hipotezi analiz et.\n\n## PROJE BAĞLAMI\n- Ürün: AGI milestone tahmin platformu\n- Hedef: AI researchers, tech enthusiasts, investors\n- Model: Free (Observer) + $9.99/mo (Oracle)\n- Diferansiyasyon: Real-time signals, AI analysis, Neural Points gamification\n- Pazar: Global, English-first\n\n## ANALİZ KRİTERLERİ\n1. **User Value** - AGI meraklıları için gerçek değer var mı?\n2. **Monetization** - Premium için ödeme yapılır mı?\n3. **Differentiation** - Polymarket/Metaculus'tan farkı?\n4. **Virality** - Paylaşılabilir mi?\n5. **Timing** - AGI hype cycle'da doğru zamanlama mı?\n6. **Execution** - Solo founder için feasible mi?\n\n## ÇIKTI FORMATI (STRICT JSON)\n{\n  \"outcome\": \"positive|negative|neutral\",\n  \"confidence\": 0.0-1.0,\n  \"insights\": [\"insight1\", \"insight2\", \"insight3\"],\n  \"recommendations\": [\"rec1\", \"rec2\"],\n  \"risks\": [\"risk1\", \"risk2\"],\n  \"priority_score\": 1-100,\n  \"summary\": \"Tek paragraf özet\"\n}",
+  "categories": {
+    "pricing": {
+      "prompt": "SUBSTANCE pricing stratejisini analiz et:\n- Observer (free) vs Oracle ($9.99/mo) value gap\n- $99/year annual discount effectiveness\n- Premium feature willingness-to-pay\n- Competitor comparison (prediction markets genelde free)",
+      "count": 15
+    },
+    "features": {
+      "prompt": "Feature değerini analiz et:\n- User engagement impact\n- Technical feasibility\n- Differentiation value\n- Development effort vs return",
+      "count": 20
+    },
+    "gtm": {
+      "prompt": "Go-to-market stratejisini analiz et:\n- AI/ML community reach\n- Viral potential\n- Influencer effectiveness\n- Content marketing opportunities",
+      "count": 15
+    },
+    "competitive": {
+      "prompt": "Rekabet senaryosunu analiz et:\n- Polymarket, Metaculus, Manifold response\n- New entrant risk\n- Platform differentiation sustainability",
+      "count": 10
+    },
+    "growth": {
+      "prompt": "Büyüme stratejisini analiz et:\n- User acquisition channels\n- Retention mechanics\n- Network effects\n- Expansion opportunities",
+      "count": 10
+    }
+  },
+  "hypotheses": {
+    "pricing": [
+      "Free Observer + $9.99/mo Oracle tier",
+      "$99/year annual plan (2 months free)",
+      "Free forever + tip jar model",
+      "$4.99/mo lower price point for higher conversion",
+      "$19.99/mo with more premium features",
+      "Credits system: 100 predictions = $5",
+      "Enterprise tier for research teams $99/seat/mo",
+      "Lifetime deal $199 (Product Hunt launch)",
+      "Free + ads (prediction-related sponsors)",
+      "Freemium + premium API access $49/mo"
+    ],
+    "features": [
+      "Real-time AGI signal feed (Twitter, arXiv, news)",
+      "AI-powered prediction analysis and reasoning",
+      "Neural Points gamification system",
+      "Leaderboard with Verified Forecaster badges",
+      "Milestone achievement badges",
+      "Referral program (invite = skip waitlist)",
+      "Personal prediction portfolio tracking",
+      "Email alerts for milestone updates",
+      "Community discussion/comments on milestones",
+      "Expert predictions from AI researchers",
+      "Historical accuracy tracking",
+      "Prediction reasoning explanations",
+      "Social sharing of predictions",
+      "Mobile app (PWA)",
+      "API for researchers",
+      "Prediction tournaments with prizes",
+      "AI model comparison dashboard",
+      "Research paper integration",
+      "Company tracker (OpenAI, Anthropic, etc.)",
+      "AGI timeline visualization"
+    ],
+    "gtm": [
+      "Product Hunt launch (AGI/AI category)",
+      "Hacker News Show HN post",
+      "Twitter/X AI community engagement",
+      "Reddit r/MachineLearning, r/artificial",
+      "AI newsletter sponsorships",
+      "YouTube AI influencer partnerships",
+      "Podcast appearances (AI-focused)",
+      "Academic conference presence",
+      "Open research/data for citations",
+      "Discord server for AGI enthusiasts",
+      "Substack/blog content marketing",
+      "LinkedIn AI thought leadership",
+      "Collaboration with AI safety orgs",
+      "Prediction accuracy press releases",
+      "Milestone achievement announcements"
+    ],
+    "competitive": [
+      "Polymarket adds AGI-specific markets",
+      "Metaculus creates competing product",
+      "Well-funded startup enters AGI prediction space",
+      "Prediction market regulation changes",
+      "Major AI lab creates own prediction platform",
+      "Crypto prediction market gains mainstream adoption",
+      "Free alternative with same features emerges",
+      "Big tech (Google/Microsoft) launches prediction tool"
+    ],
+    "growth": [
+      "Expand from predictions to AGI news aggregation",
+      "Add betting/real money markets (regulated)",
+      "B2B offering for AI research teams",
+      "White-label for AI companies",
+      "Educational content about AGI",
+      "Consulting services for AGI readiness",
+      "Data/API licensing to researchers",
+      "Community-driven milestone creation",
+      "Geographic expansion (localization)",
+      "Mobile-first experience"
+    ]
+  }
+}

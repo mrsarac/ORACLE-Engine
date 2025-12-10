@@ -1,0 +1,100 @@
+{
+  "name": "Business Strategy",
+  "description": "SaaS business model and go-to-market simulation",
+  "version": "1.0",
+  "master_prompt": "Sen dünyanın en deneyimli SaaS ve startup stratejistisin. Y Combinator, a16z ve Sequoia'da 15+ yıl deneyimin var. Unicorn şirketlerin (Stripe, Notion, Linear, Vercel) kuruluş aşamalarında danışmanlık yaptın.\n\n## GÖREV\nVerilen iş hipotezini analiz et. Gerçekçi ol, övgü değil eleştirel değerlendirme yap.\n\n## ANALİZ KRİTERLERİ\n1. **Market Size** - TAM/SAM/SOM gerçekçi mi?\n2. **Problem-Solution Fit** - Gerçek bir ağrı noktası mı?\n3. **Business Model** - Unit economics çalışır mı?\n4. **Competition** - Moat var mı?\n5. **Timing** - Market ready mi?\n6. **Execution Risk** - Solo founder için feasible mi?\n\n## ÇIKTI FORMATI (STRICT JSON)\n{\n  \"outcome\": \"positive|negative|neutral\",\n  \"confidence\": 0.0-1.0,\n  \"insights\": [\"insight1\", \"insight2\", \"insight3\"],\n  \"recommendations\": [\"rec1\", \"rec2\"],\n  \"risks\": [\"risk1\", \"risk2\"],\n  \"priority_score\": 1-100,\n  \"summary\": \"Tek paragraf özet\"\n}",
+  "categories": {
+    "pricing": {
+      "prompt": "Pricing stratejisini analiz et:\n- Willingness-to-pay\n- Free tier sustainability\n- Conversion potential\n- Competitor pricing comparison",
+      "count": 20
+    },
+    "gtm": {
+      "prompt": "Go-to-market stratejisini analiz et:\n- Channel effectiveness\n- CAC/LTV ratio\n- Viral coefficient potential\n- Time to first revenue",
+      "count": 20
+    },
+    "competitive": {
+      "prompt": "Rekabet senaryosunu analiz et:\n- Competitor response likelihood\n- Sustainable differentiation\n- Switching costs\n- Network effects",
+      "count": 15
+    },
+    "risk": {
+      "prompt": "Risk senaryosunu analiz et:\n- Probability of occurrence\n- Impact severity\n- Mitigation options\n- Recovery plan",
+      "count": 15
+    },
+    "growth": {
+      "prompt": "Büyüme stratejisini analiz et:\n- Scalability\n- Expansion opportunities\n- Resource requirements\n- Timeline realism",
+      "count": 15
+    }
+  },
+  "hypotheses": {
+    "pricing": [
+      "Free tier + $9.99/mo premium - Solo dev SaaS",
+      "Free tier + $99/year (2 ay indirim) - Annual commitment",
+      "Usage-based pricing $0.01/API call",
+      "Freemium + $19.99/mo pro + $49.99/mo team",
+      "One-time $199 lifetime deal",
+      "Pay-what-you-want minimum $5/mo",
+      "Free for OSS + $15/mo commercial",
+      "Geographic pricing (PPP adjusted)",
+      "Free beta + premium at product-market fit",
+      "Reverse trial - full features 14 days then downgrade",
+      "$4.99/mo micro-SaaS pricing",
+      "Credit-based system (100 credits = $10)",
+      "Free + premium support $50/mo",
+      "Student/edu free + commercial $20/mo",
+      "Enterprise custom pricing $500+/mo"
+    ],
+    "gtm": [
+      "Product Hunt launch + Hacker News post",
+      "Twitter/X developer influencer marketing",
+      "YouTube tutorial series + SEO",
+      "Discord community-first approach",
+      "Cold email to 1000 target users",
+      "Conference speaking circuit",
+      "Open source core + cloud premium",
+      "Affiliate program with 30% commission",
+      "Partnership with complementary tools",
+      "Reddit r/SaaS + r/startups AMA",
+      "Newsletter sponsorships (TLDR, Bytes)",
+      "SEO-first content marketing",
+      "Indie Hackers community engagement",
+      "Beta tester referral program",
+      "Local tech meetup presentations"
+    ],
+    "competitive": [
+      "Major player (Google/Microsoft) enters market",
+      "Well-funded startup raises $50M for same space",
+      "Open source alternative gains traction",
+      "Existing tool adds our core feature",
+      "Price war initiated by competitor",
+      "Competitor gets acquired by enterprise giant",
+      "New AI breakthrough makes approach obsolete",
+      "Regulation changes affect business model",
+      "Key dependency (API provider) shuts down",
+      "Copycat products flood the market"
+    ],
+    "risk": [
+      "Solo founder burnout",
+      "Cash runway runs out before PMF",
+      "Key technology becomes deprecated",
+      "Legal/compliance issue discovered",
+      "Security breach damages reputation",
+      "Churn rate exceeds 10% monthly",
+      "CAC exceeds LTV",
+      "Platform dependency risk (App Store, etc.)",
+      "Economic downturn kills discretionary spending",
+      "Technical debt blocks feature velocity"
+    ],
+    "growth": [
+      "Expand from solo devs to teams",
+      "Add enterprise tier with SSO/audit",
+      "Geographic expansion to EU market",
+      "Mobile app companion",
+      "API/platform play for integrations",
+      "Acquire smaller competitor",
+      "White-label/OEM licensing",
+      "Vertical-specific versions",
+      "Consulting/services arm",
+      "Educational content monetization"
+    ]
+  }
+}
