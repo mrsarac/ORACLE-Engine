@@ -38,10 +38,8 @@ env/
 .env.local
 *.env
 
-# Results (keep structure, ignore content)
-results/*.json
-results/*.md
-!results/.gitkeep
+# Results (symlinked to ORACLE-Data for private storage)
+results
 
 # OS
 .DS_Store

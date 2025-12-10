@@ -179,14 +179,37 @@ ORACLE-Engine/
 │   └── oracle_engine.py      # Main engine
 ├── templates/
 │   ├── business.json         # Business strategy template
-│   └── substance.json        # SUBSTANCE-specific template
-├── results/                   # Simulation outputs
+│   ├── substance.json        # SUBSTANCE-specific template
+│   └── company.json          # Company formation strategy
 ├── docs/                      # Documentation
 ├── examples/                  # Example configs
 ├── requirements.txt
 ├── .env.example
 └── README.md
 ```
+
+## Private Data Storage
+
+Keep your simulation results private while using the open-source engine:
+
+```bash
+# 1. Create a private data repo
+mkdir ~/ORACLE-Data
+cd ~/ORACLE-Data
+git init
+
+# 2. Symlink results folder
+cd ~/ORACLE-Engine
+rm -rf results
+ln -s ~/ORACLE-Data/results results
+
+# 3. Run simulations - data goes to private repo
+python -m src.oracle_engine --domain business --output results/
+```
+
+This way:
+- **ORACLE-Engine** stays open source (public)
+- **Your simulation data** stays private (separate repo)
 
 ## Examples
 

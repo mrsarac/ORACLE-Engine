@@ -1,0 +1,74 @@
+{
+  "name": "Company Formation & Cash Flow Strategy",
+  "description": "Solo founder Almanya şirket kurulumu ve nakit akışı stratejisi",
+  "version": "1.0",
+  "master_prompt": "Sen Almanya'da 15+ yıl deneyimli bir startup danışmanı ve Steuerberater'sın. Özellikle solo founder'lar, Einzelunternehmen → GmbH geçişleri ve SaaS iş modelleri konusunda uzmansın.\n\nMüşteri Profili:\n- İsim: Mustafa Saraç\n- Lokasyon: Köln, NRW, Almanya\n- Durum: Full-time çalışan (Nebentätigkeit izni gerekli)\n- Hedef: SaaS ürünleri ile gelir elde etmek\n- Ürünler: SUBSTANCE (AGI prediction), Spinoza (emotional AI)\n- Bütçe: Kısıtlı, bootstrap\n- Zaman: Kısıtlı, tek kişi operasyon\n\n## ANALİZ KRİTERLERİ\n1. **Yasal Uyum** - Almanya hukuku ve vergi mevzuatı\n2. **Maliyet** - Başlangıç ve devam eden maliyetler\n3. **Zaman** - İşlem süreleri ve timeline\n4. **Risk** - Potansiyel sorunlar ve çözümler\n5. **Ölçeklenebilirlik** - Büyüme için uygunluk\n6. **Pratiklik** - Solo founder için feasibility\n\n## ÇIKTI FORMATI (STRICT JSON)\n{\n  \"outcome\": \"positive|negative|neutral\",\n  \"confidence\": 0.0-1.0,\n  \"insights\": [\"insight1\", \"insight2\", \"insight3\"],\n  \"recommendations\": [\"rec1\", \"rec2\"],\n  \"risks\": [\"risk1\", \"risk2\"],\n  \"priority_score\": 1-100,\n  \"summary\": \"Tek paragraf özet\",\n  \"action_items\": [\"adım1\", \"adım2\"],\n  \"timeline\": \"Tahmini süre\",\n  \"cost_estimate\": \"Tahmini maliyet\"\n}",
+  "categories": {
+    "formation": {
+      "prompt": "Şirket kurulumu stratejisini analiz et:\n- Yasal gereklilikler\n- Maliyetler (Gewerbeanmeldung, Notar, etc.)\n- Timeline\n- HR izni (Nebentätigkeit) etkileri\n- Vergi etkileri",
+      "count": 10
+    },
+    "cashflow": {
+      "prompt": "Nakit akışı stratejisini analiz et:\n- İlk gelir için en hızlı yol\n- Stripe/ödeme entegrasyonu\n- Fiyatlandırma\n- Maliyet optimizasyonu",
+      "count": 10
+    },
+    "infrastructure": {
+      "prompt": "Finansal altyapı stratejisini analiz et:\n- Banking (Qonto, N26, etc.)\n- Muhasebe (Xero, Lexoffice, etc.)\n- Steuerberater seçimi\n- Ölçeklenebilirlik",
+      "count": 10
+    },
+    "risk": {
+      "prompt": "Risk senaryosunu analiz et:\n- HR izni reddi\n- Vergi sorunları\n- Cash flow negatif\n- Yasal uyumsuzluk",
+      "count": 10
+    }
+  },
+  "hypotheses": {
+    "formation": [
+      "Gewerbeanmeldung (Einzelunternehmen) ile başla, €26 maliyet, 1 hafta",
+      "Direkt UG (haftungsbeschränkt) kur, €300-500, limited liability",
+      "Gewerbeanmeldung yap ama HR izni beklemeden başla (risk al)",
+      "HR izni onaylanana kadar hiçbir şey yapma (güvenli yol)",
+      "Estonya e-Residency ile EU şirket kur (remote-first)",
+      "İngiltere Ltd şirket kur (post-Brexit avantajlar)",
+      "Holding yapısı: UG + operasyonel şirket",
+      "Freelancer olarak başla, şirket sonra",
+      "Almanya + ABD LLC kombinasyonu (Stripe Atlas)",
+      "Sadece dijital ürün sat, fiziksel şirket kurma"
+    ],
+    "cashflow": [
+      "SUBSTANCE Oracle tier $9.99/mo - hemen Stripe aç",
+      "Consulting/freelance ile ilk geliri al, SaaS sonra",
+      "Pre-sale/lifetime deal ile upfront cash topla",
+      "Waitlist'e erken erişim için ödeme iste",
+      "Sponsorluk/reklam geliri (newsletter, content)",
+      "Open source + GitHub sponsors",
+      "B2B pilot müşteri bul, yıllık kontrat",
+      "Microservices/API satışı (pay-per-use)",
+      "White-label lisanslama",
+      "Eğitim/kurs satışı (Udemy, Gumroad)"
+    ],
+    "infrastructure": [
+      "Qonto Business + Xero + Ecovis Steuerberater kombinasyonu",
+      "Kontist (ücretsiz) + Lexoffice + Felix1 kombinasyonu",
+      "N26 Business + sevdesk + yerel Steuerberater",
+      "Revolut Business + QuickBooks + online Steuerberater",
+      "Holvi + Debitoor + DIY vergi (başlangıç için)",
+      "Full enterprise stack: Qonto + Xero + Big4 (KPMG)",
+      "Minimum viable: sadece banka + Excel tracking",
+      "All-in-one: Kontist (banka + muhasebe + vergi)",
+      "Hybrid: Alman banka + global muhasebe (Xero)",
+      "Future-proof: API-first tüm sistemler"
+    ],
+    "risk": [
+      "Cubonic HR izni reddederse ne olur?",
+      "Gewerbeanmeldung sonrası Finanzamt sorun çıkarırsa?",
+      "İlk 6 ay gelir gelmezse cash runway?",
+      "Stripe hesabı dondurulursa alternatif?",
+      "Steuerberater yanlış danışmanlık verirse?",
+      "GDPR ihlali tespit edilirse?",
+      "Müşteri şikayeti/dava açarsa?",
+      "Vergi denetimi (Betriebsprüfung) gelirse?",
+      "Burnout/sağlık sorunu olursa?",
+      "Ana iş (Cubonic) ile çıkar çatışması iddiası?"
+    ]
+  }
+}
