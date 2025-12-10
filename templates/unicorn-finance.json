@@ -1,0 +1,126 @@
+{
+  "name": "Unicorn Finance Stack Strategy",
+  "description": "Milyar dolarlık şirket hedefi için optimal finans altyapısı simülasyonu",
+  "version": "1.0",
+  "master_prompt": "Sen dünya çapında tanınan bir Fintech ve Startup Finance uzmanısın. Stripe, Plaid, Brex, Ramp, Mercury gibi fintech unicorn'larının kurucularına danışmanlık yaptın. Y Combinator, a16z, Sequoia portföy şirketlerinin CFO'ları ile çalıştın.\n\n## MÜŞTERİ PROFİLİ\n- Kurucu: Solo founder, yazılım geliştirici\n- Lokasyon: Almanya (Köln, NRW)\n- Ürünler: B2C/B2B SaaS (SUBSTANCE, Spinoza)\n- Gelir: Pre-revenue → $1B hedefi\n- Bütçe: Bootstrap, kısıtlı\n- Zaman: Kısıtlı, tek kişi\n\n## ANALİZ KRİTERLERİ\n1. **API Desteği** - Otomasyon ve entegrasyon kapasitesi\n2. **Ölçeklenebilirlik** - $0 → $1B gelire kadar büyüme\n3. **Maliyet Etkinliği** - Başlangıç + scale maliyetleri\n4. **Global Uyumluluk** - Multi-currency, multi-country\n5. **Investor-Ready** - Due diligence, audit trail\n6. **Solo Founder Uyumu** - Minimum overhead, self-service\n\n## ÇIKTI FORMATI (STRICT JSON)\n{\n  \"outcome\": \"positive|negative|neutral\",\n  \"confidence\": 0.0-1.0,\n  \"insights\": [\"insight1\", \"insight2\", \"insight3\"],\n  \"recommendations\": [\"rec1\", \"rec2\"],\n  \"risks\": [\"risk1\", \"risk2\"],\n  \"priority_score\": 1-100,\n  \"summary\": \"Tek paragraf özet\",\n  \"cost_analysis\": {\"startup\": \"€X/ay\", \"scale\": \"€X/ay\", \"enterprise\": \"€X/ay\"},\n  \"api_score\": 1-10,\n  \"scalability_score\": 1-10\n}",
+  "categories": {
+    "banking": {
+      "prompt": "Banking çözümünü analiz et:\n- API kapasitesi (REST, webhooks, real-time)\n- Multi-currency desteği\n- Startup programları\n- Entegrasyon ekosistemi\n- Almanya'da kullanılabilirlik\n- $0 → $1B gelir yolculuğunda uygunluk",
+      "count": 15
+    },
+    "accounting": {
+      "prompt": "Muhasebe yazılımını analiz et:\n- API kapasitesi\n- Stripe/payment entegrasyonu\n- Multi-entity desteği\n- Almanya vergi uyumu (Datev)\n- Global genişleme kapasitesi\n- Audit trail ve investor reporting",
+      "count": 15
+    },
+    "tax_advisor": {
+      "prompt": "Steuerberater/vergi danışmanı seçeneğini analiz et:\n- Tech startup deneyimi\n- SaaS/subscription gelir anlayışı\n- International expansion desteği\n- API/dijital entegrasyon\n- Maliyet/değer oranı\n- VC due diligence deneyimi",
+      "count": 10
+    },
+    "payment": {
+      "prompt": "Ödeme altyapısını analiz et:\n- Stripe alternatifleri\n- Subscription billing\n- Multi-currency\n- Almanya'da kullanım\n- Fraud protection\n- Payout hızı",
+      "count": 10
+    },
+    "growth_model": {
+      "prompt": "Finansal büyüme modelini analiz et:\n- Bootstrap vs VC\n- Runway yönetimi\n- Unit economics\n- Profitability path\n- Funding timing\n- Exit strategy",
+      "count": 15
+    },
+    "stack_combo": {
+      "prompt": "Finans stack kombinasyonunu analiz et:\n- Entegrasyon uyumu\n- Toplam maliyet\n- Otomasyon potansiyeli\n- Tek kişi yönetilebilirlik\n- Büyüme ile uyumluluk\n- Migration riski",
+      "count": 15
+    }
+  },
+  "hypotheses": {
+    "banking": [
+      "Qonto (Avrupa #1 B2B neobank, API-first, startup program)",
+      "Mercury (US startup banking, ama EU'da yok - alternatif?)",
+      "Revolut Business (ucuz, global, ama kurumsal mı?)",
+      "N26 Business (Alman, basit, ama scale eder mi?)",
+      "Kontist (ücretsiz, vergi dahil, ama API?)",
+      "Wise Business (multi-currency king, ama primary bank?)",
+      "Brex (US startup standard, EU expansion?)",
+      "Holvi (Finlandiya, basit, ama büyüme?)",
+      "Penta (Alman, SMB focused)",
+      "Fyrst (Deutsche Bank backed)",
+      "Bunq (Hollanda, yeşil, API güçlü)",
+      "Finom (yeni, invoice dahil)",
+      "Traditional bank (Deutsche Bank, Commerzbank) - gerekli mi?",
+      "Multi-bank strategy (Qonto EU + Wise global)",
+      "Stripe Treasury (US only şimdilik, gelecek?)"
+    ],
+    "accounting": [
+      "Xero (global standard, 1000+ entegrasyon, API-first)",
+      "QuickBooks Online (US popular, Intuit ekosistemi)",
+      "Lexoffice (Almanya #1, Datev uyumlu, ama global?)",
+      "sevDesk (Alman, modern UI, API var)",
+      "FreshBooks (freelancer focused, ama scale?)",
+      "Wave (ücretsiz, ama enterprise?)",
+      "Sage (enterprise, ama startup için heavy?)",
+      "NetSuite (Oracle, enterprise, pahalı)",
+      "Zoho Books (ucuz, feature-rich, ama support?)",
+      "FreeAgent (UK popular, basit)",
+      "Holded (İspanya, all-in-one)",
+      "Pennylane (Fransa, modern, AI-powered)",
+      "Datev Unternehmen Online (Steuerberater standard)",
+      "Custom solution (Stripe + Xero API + custom dashboard)",
+      "Hybrid: Lexoffice (DE compliance) + Xero (global reporting)"
+    ],
+    "tax_advisor": [
+      "Ecovis (international, startup desk, tech-friendly)",
+      "ETL (Almanya çapında network, tech team)",
+      "KPMG Startup Services (Big4, prestige, pahalı)",
+      "EY Startup Program (global network, VC bağlantıları)",
+      "Deloitte Fast 50 (tech focus)",
+      "PwC Scale (startup program)",
+      "Rödl & Partner (mid-market, international)",
+      "Taxdoo (SaaS specialized, full API)",
+      "Felix1 (online, ucuz, hızlı)",
+      "Accountable (app-based, basit)"
+    ],
+    "payment": [
+      "Stripe (global standard, en iyi API, ama Almanya setup?)",
+      "Paddle (MoR - Merchant of Record, vergi yönetimi dahil)",
+      "Lemon Squeezy (yeni MoR, basit)",
+      "FastSpring (SaaS focused MoR)",
+      "PayPal Commerce (yaygın, ama fees?)",
+      "Adyen (enterprise, ama startup?)",
+      "Mollie (Avrupa focused, iyi API)",
+      "GoCardless (SEPA direct debit)",
+      "Chargebee + Stripe (subscription management)",
+      "Recurly + Stripe (subscription alternative)"
+    ],
+    "growth_model": [
+      "Pure Bootstrap: Gelirle büyü, %100 ownership koru",
+      "Revenue-Based Financing: Pipe, Clearco - dilution yok",
+      "Angel Round: €50-100K, mentorship + para",
+      "Pre-seed VC: €200-500K, hızlı büyüme başlat",
+      "Seed Round: €500K-2M, PMF sonrası scale",
+      "Crowdfunding: Wefunder, Republic - community + para",
+      "Grants: EU Horizon, EXIST, NRW.BANK - bedava para",
+      "Hybrid: Bootstrap to $10K MRR, then raise",
+      "Strategic Investment: Büyük şirketten yatırım (Stripe, etc.)",
+      "Accelerator: YC, Techstars, Entrepreneur First",
+      "Bootstrapped Exit: Profitability → acquisition",
+      "Venture Path: Seed → Series A → B → IPO/Exit",
+      "Indie Hacker: Lifestyle business, $1M ARR cap",
+      "Holding Structure: UG holding + operating companies",
+      "Global Structure: DE holding + US operating (Delaware)"
+    ],
+    "stack_combo": [
+      "Qonto + Xero + Ecovis + Stripe = Premium Scale Stack",
+      "Kontist + Lexoffice + Felix1 + Stripe = Minimum Viable Stack",
+      "Revolut + QuickBooks + Online Steuerberater + Stripe = Budget Global",
+      "N26 + sevDesk + ETL + Stripe = German Focused",
+      "Wise + Xero + Taxdoo + Paddle = Global MoR Stack",
+      "Qonto + Lexoffice + Ecovis + Stripe = German Compliant Scale",
+      "Mercury alternative + Xero + Big4 + Stripe = VC-Ready Stack",
+      "Multi-bank (Qonto + Wise) + Xero + Rödl + Stripe = Enterprise Ready",
+      "Bunq + Zoho + Felix1 + Mollie = Budget EU Stack",
+      "Traditional bank + Datev + Local Steuerberater = Conservative German",
+      "Finom + Holded + Accountable + Lemon Squeezy = All-in-One Simple",
+      "Qonto + Pennylane + Ecovis + Stripe = Modern AI Stack",
+      "Brex equivalent + NetSuite + KPMG + Stripe = Full Enterprise",
+      "Stripe Atlas + Mercury + Xero + US CPA = US-First Structure",
+      "Hybrid: DE (Qonto+Lexoffice) + Global (Wise+Xero) = Multi-Region"
+    ]
+  }
+}
